@@ -1,0 +1,126 @@
+/* Скидання базових стилів */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #343434; /* Темно-сірий фон сторінки */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header & Footer */
+.main-header,
+.main-footer {
+  background-color: #2f3061; /* Темно-фіолетовий */
+  color: rgb(216, 216, 216);
+  text-align: center;
+  padding: 1rem;
+}
+
+.main-header h1 {
+  font-size: 1.5rem;
+}
+
+/* Main Layout */
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Form Card Design */
+.form-wrapper {
+  background: #5f5980; /* Світліший фіолетовий для картки */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Трішки посилив тінь для темної теми */
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-wrapper h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #ffffff; /* Чистий білий для заголовка */
+}
+
+/* Input Styling */
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ececec;
+  font-size: 0.9rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: all 0.3s;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.form-input:focus {
+  border-color: #8fa1ff;
+  box-shadow: 0 0 5px rgba(143, 161, 255, 0.5);
+  outline: none;
+}
+
+/* Validation Styles */
+.form-input.error {
+  border-color: #ffadad;
+  background-color: #fff0f0;
+}
+
+.error-message {
+  color: #ffadad;
+  font-weight: 500;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 4px;
+  height: 1rem;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #2f3061;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #46488a;
+}
+
+/* Feedback Message */
+.form-feedback {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #ececec;
+}
+
+.success {
+  color: #90ee90;
+}
